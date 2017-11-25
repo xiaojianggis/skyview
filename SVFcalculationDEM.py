@@ -1,6 +1,4 @@
 
-# Frist version, test for the github
-# dafdas dsfasf
 
 # This script is used to calculate the Sky View Factor from the binary classification
 # result of re-projected Sphere view Google Street View panorama
@@ -16,6 +14,8 @@
 # second version Sep 6, 2016, UCONN
 # The second version add a statement to save the SVF to a shapefile, based on the
 # coordinate information in the file name of the panoramas
+
+# Copyright (c) Xiaojiang Li, MIT Senseable City Lab
 
 from PIL import Image
 from pylab import*
