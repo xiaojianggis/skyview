@@ -1,11 +1,13 @@
-# Download Google Street Panoramas
+# Download Google Street View Panoramas
 
 This project is aims to estimate the shade provision of the street trees using publicly 
 accessible Google Street View panoramas and building height model in Boston. The method
 can also be applied to other cities considering the massively available of Google Street
 View service and the building height model information
 
-For more details about the method check the paper Li and Ratti, "Mapping the spatial distribution of shade provision of street trees in Boston using Google Street View panoramas", Urban Forestry and Urban Greening. 
+For more details about the method check the paper 
+
+Li and Ratti, "Mapping the spatial distribution of shade provision of street trees in Boston using Google Street View panoramas", Urban Forestry and Urban Greening. 
 
 ## Getting Started
 
@@ -13,7 +15,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Before you running the code, you need to have several Python module installed on your computer. 
+Before you running the code, you need to have several Python modules installed on your computer. 
 
 1. urllib
 2. cStringIO
@@ -21,70 +23,37 @@ Before you running the code, you need to have several Python module installed on
 4. PIL/Pillow
 
 ```
-Give examples
-```
+pip cStringIO
+pip urllib
+pip pillow
 
-### Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
+### How to use the function
 
 Explain what these tests test and why
 
 ```
-Give an example
-```
+import os,os.path
+panoFolder = r'/Users/senseablecity/Dropbox (MIT)/ResearchProj/ShadeProvisionBoston/code'
+##panoId = 'U8B4cKDxnauFW-Yt7siKtw'
+panoId = "c8gcWEqLiOcVwDrtJDiB4g"
+panoImgFile = os.path.join(panoFolder,panoId + '.jpg')
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
+GSVpanoramaDowloader_GoogleMaps(panoId,panoImgFile)
 ```
 
 ## Deployment
 
 Add additional notes about how to deploy this on a live system
 
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Xiaojiang Li** - *Initial work* - [Treepedia](http://senseable.mit.edu/treepedia)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](http://senseable.mit.edu/) who participated in this project.
 
 ## License
 
@@ -92,6 +61,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
+* Google Maps
+* Massachusetts Open Data
 * etc
