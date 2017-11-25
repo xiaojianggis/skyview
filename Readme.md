@@ -44,10 +44,6 @@ panoImgFile = os.path.join(panoFolder,panoId + '.jpg')
 GSVpanoramaDowloader_GoogleMaps(panoId,panoImgFile)
 ```
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
 ## Authors
 
 * **Xiaojiang Li** - *Initial work* - [Treepedia](http://senseable.mit.edu/treepedia)
