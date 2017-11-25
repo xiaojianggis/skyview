@@ -13,14 +13,10 @@ def GSVpanoramaDowloader_GoogleMaps(panoId, gsvPanoImgFile):
     zoom is 1:
     https://geo0.ggpht.com/cbk?cb_client=maps_sv.tactile&authuser=0&hl=en&panoid=iKXN73P5BhoYdBpxB973zw&output=tile&x=0&y=0&zoom=0&nbt&fover=2
     
-    You can get this from the Google Map, check the source code of Google Maps
-    
-    The second step of this function is to merge all the patches together to create
-    a complete panorama
     
     parameters:
-        panoInfo: the metadata of the panoramas
-        outGSVRoot: the output folder of the panorama images
+        panoId: the panorama id
+        gsvPanoImgFile: the full name of the output GSV panorama 
     
     first version July 11, 2016, MIT Senseable City Lab. 
     """
@@ -94,7 +90,7 @@ def GSVpanoramaDowloader_GoogleMaps(panoId, gsvPanoImgFile):
     del img,cut_mergedImg,mergedImg
 
 
-## ----------------- Main function ---------------------------
+## --------------------- Main function ---------------------------
 import os,os.path
 panoFolder = r'/Users/senseablecity/Dropbox (MIT)/ResearchProj/ShadeProvisionBoston/code'
 ##panoId = 'U8B4cKDxnauFW-Yt7siKtw'
