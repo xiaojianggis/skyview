@@ -1,6 +1,11 @@
-# Project Title
+# Download Google Street Panoramas
 
-One Paragraph of project description goes here
+This project is aims to estimate the shade provision of the street trees using publicly 
+accessible Google Street View panoramas and building height model in Boston. The method
+can also be applied to other cities considering the massively available of Google Street
+View service and the building height model information
+
+For more details about the method check the paper Li and Ratti, "Mapping the spatial distribution of shade provision of street trees in Boston using Google Street View panoramas", Urban Forestry and Urban Greening. 
 
 ## Getting Started
 
@@ -8,7 +13,12 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Before you running the code, you need to have several Python module installed on your computer. 
+
+1. urllib
+2. cStringIO
+3. Numpy
+4. PIL/Pillow
 
 ```
 Give examples
