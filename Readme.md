@@ -26,7 +26,6 @@ Before you running the code, you need to have several Python modules installed o
 pip cStringIO
 pip urllib
 pip pillow
-
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
